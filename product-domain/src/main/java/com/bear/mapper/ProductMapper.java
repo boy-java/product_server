@@ -12,4 +12,7 @@ public interface ProductMapper {
 
     @Select("SELECT * FROM product")
     List<Product> all();
+
+    @Select("SELECT * FROM product WHERE id = #{id}")
+    Product findByid(String id);
 }

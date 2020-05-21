@@ -20,4 +20,9 @@ public class ProductController {
     public List<Product> findAll(){
         return productService.all();
     }
+
+    @GetMapping("findById")
+    public Product findById(String id){
+        return productService.findById(id);
+    }
 }
