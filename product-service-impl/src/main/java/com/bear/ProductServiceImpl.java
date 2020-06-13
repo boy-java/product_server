@@ -19,4 +19,9 @@ public class ProductServiceImpl implements ProductService {
     public List<Product> all() {
         return mapper.all();
     }
+
+    @Override
+    public Product findById(String id) {
+        return mapper.findById(id);
+    }
 }
